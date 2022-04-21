@@ -34,7 +34,6 @@
         "jest-dom"
     ],
     "rules": {
-        "quotes": ["error", "single"],
         "react/no-multi-comp": "error",
         "react/prefer-stateless-function": "error",
         "react/jsx-pascal-case": "error",
@@ -46,8 +45,9 @@
         "react/jsx-no-duplicate-props": "error",
         "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeEach"}],
         "arrow-body-style": "off",
-        "prefer-arrow-callback": "off",
-        "indent": "error"
+        "prefer-arrow-callback": "off"
+//        "quotes": ["error", "single"],
+//        "indent": "error"
         /* 
          * Conflicted Rules
          */
