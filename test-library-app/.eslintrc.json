@@ -11,6 +11,7 @@
         "plugin:react/jsx-runtime",
         "plugin:testing-library/react",
         "plugin:jest-dom/recommended",
+        "plugin:react-hooks/recommended",
         "prettier"
     ],
     "settings": {
@@ -31,7 +32,8 @@
     "plugins": [
         "react",
         "testing-library",
-        "jest-dom"
+        "jest-dom",
+        "react-hooks"
     ],
     "rules": {
         "react/no-multi-comp": "error",
@@ -45,7 +47,10 @@
         "react/jsx-no-duplicate-props": "error",
         "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeEach"}],
         "arrow-body-style": "off",
-        "prefer-arrow-callback": "off"
+        "prefer-arrow-callback": "off",
+        "react/prop-types": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
 //        "quotes": ["error", "single"],
 //        "indent": "error"
         /* 

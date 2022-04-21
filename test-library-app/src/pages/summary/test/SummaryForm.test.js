@@ -24,14 +24,18 @@ it('Checkbox disable button on a 1click and enable in a 2d', () => {
 });
 
 it('popover response to hover', async () => {
+    // noinspection JSCheckFunctionSignatures
     const nullPopover = screen.queryByText(/no ice cream will be delivered/i);
     expect(nullPopover).not.toBeInTheDocument();
 
+    // noinspection JSCheckFunctionSignatures
     const termsAndConditions = screen.getByText(/terms&conditions/i);
     userEvent.hover(termsAndConditions);
+    // noinspection JSCheckFunctionSignatures
     const popover = screen.getByText(/no ice cream will be delivered/i);
     expect(popover).toBeInTheDocument();
 
     userEvent.unhover(termsAndConditions);
+    // noinspection JSCheckFunctionSignatures
     await waitForElementToBeRemoved(() => screen.queryByText(/no ice cream will be delivered/i));
 });

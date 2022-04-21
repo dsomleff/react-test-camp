@@ -10,4 +10,4 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - basic examples of tests syntax
 - functions and queries
 - `eslint` and `prettier` setups
-- `Mock Service Worker`
+- `Mock Service Worker` to simulate server request

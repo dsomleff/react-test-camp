@@ -5,7 +5,7 @@ export const handlers = [
         return res(
             ctx.json([
                 { name: 'chocolate', img: '/images/chocolate.png' },
-                { name: 'vanilla', img: '/images/chocolate.png' },
+                { name: 'vanilla', img: '/images/vanilla.png' },
             ])
         );
     }),
