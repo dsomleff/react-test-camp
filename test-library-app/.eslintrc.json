@@ -10,7 +10,8 @@
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "plugin:testing-library/react",
-        "plugin:jest-dom/recommended"
+        "plugin:jest-dom/recommended",
+        "prettier"
     ],
     "settings": {
         "import/resolver": {
@@ -33,38 +34,45 @@
         "jest-dom"
     ],
     "rules": {
-        "linebreak-style": ["error", "unix"],
         "quotes": ["error", "single"],
-        "semi": ["error", "always"],
-        "react/jsx-closing-tag-location": "error",
-        "react/jsx-closing-bracket-location": "error",
         "react/no-multi-comp": "error",
         "react/prefer-stateless-function": "error",
         "react/jsx-pascal-case": "error",
-        "jsx-quotes": "error",
-        "react/jsx-props-no-multi-spaces": "error",
-        "react/jsx-tag-spacing": ["error", { "beforeSelfClosing":  "always" }],
-        "react/jsx-curly-spacing": "error",
         "react/jsx-boolean-value": "error",
         "react/no-string-refs": "error",
-        "react/jsx-wrap-multilines": ["error", {
-            "declaration": "parens-new-line",
-            "assignment": "parens-new-line",
-            "return": "parens-new-line",
-            "arrow": "parens-new-line",
-            "condition": "parens-new-line",
-            "logical": "parens-new-line",
-            "prop": "parens-new-line"
-        }],
         "react/self-closing-comp": "error",
         "react/no-array-index-key": "error",
         "react/no-invalid-html-attribute": "error",
-        "react/jsx-curly-newline": ["error", "consistent"],
-        "react/jsx-equals-spacing": "error",
-        "react/jsx-first-prop-new-line": ["error", "multiline"],
-        "react/jsx-max-props-per-line": ["error", { "maximum":  3 }],
-        "react/jsx-newline": "error", // spaces between components
         "react/jsx-no-duplicate-props": "error",
-        "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeEach"}]
+        "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeEach"}],
+        "prettier/prettier": "error",
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+        "indent": "error"
+        /* 
+         * Conflicted Rules
+         */
+//        "linebreak-style": ["error", "unix"],
+//        "semi": ["error", "always"],
+//        "react/jsx-closing-tag-location": "error",
+//        "react/jsx-closing-bracket-location": "error",
+//        "jsx-quotes": "error",
+//        "react/jsx-props-no-multi-spaces": "error",
+//        "react/jsx-tag-spacing": ["error", { "beforeSelfClosing":  "always" }],
+//        "react/jsx-curly-spacing": "error",
+//        "react/jsx-wrap-multilines": ["error", {
+//            "declaration": "parens-new-line",
+//            "assignment": "parens-new-line",
+//            "return": "parens-new-line",
+//            "arrow": "parens-new-line",
+//            "condition": "parens-new-line",
+//            "logical": "parens-new-line",
+//            "prop": "parens-new-line"
+//        }],
+//        "react/jsx-curly-newline": ["error", "consistent"],
+//        "react/jsx-equals-spacing": "error",
+//        "react/jsx-first-prop-new-line": ["error", "multiline"],
+//        "react/jsx-max-props-per-line": ["error", { "maximum":  3 }],
+//        "react/jsx-newline": "error", // spaces between components
     }
 }

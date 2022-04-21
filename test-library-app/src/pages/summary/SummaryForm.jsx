@@ -12,7 +12,10 @@ export default function SummaryForm() {
     const checkboxLabel = (
         <span>
             I agree to
-            <OverlayTrigger placement="right" overlay={popover}>
+            <OverlayTrigger
+                placement="right"
+                overlay={popover}
+            >
                 <span style={{ color: 'blue' }}> Terms&Conditions</span>
             </OverlayTrigger>
         </span>
@@ -29,7 +32,11 @@ export default function SummaryForm() {
                 />
             </Form.Group>
 
-            <Button variant="primary" type="submit" disabled={!checked}>
+            <Button
+                variant="primary"
+                type="submit"
+                disabled={!checked}
+            >
                 Confirm order
             </Button>
         </Form>
