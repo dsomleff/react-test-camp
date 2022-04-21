@@ -45,13 +45,13 @@
         "react/no-invalid-html-attribute": "error",
         "react/jsx-no-duplicate-props": "error",
         "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeEach"}],
-        "prettier/prettier": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "off",
         "indent": "error"
         /* 
          * Conflicted Rules
          */
+//        "prettier/prettier": "error", // commented based in import conflict in test files
 //        "linebreak-style": ["error", "unix"],
 //        "semi": ["error", "always"],
 //        "react/jsx-closing-tag-location": "error",
