@@ -4,8 +4,18 @@ export const handlers = [
     rest.get('http://localhost:3030/scoops', (req, res, ctx) => {
         return res(
             ctx.json([
-                { name: 'chocolate', img: '/images/chocolate.png' },
-                { name: 'vanilla', img: '/images/vanilla.png' },
+                { name: 'chocolate', imgPath: '/images/chocolate.png' },
+                { name: 'vanilla', imgPath: '/images/vanilla.png' },
+            ])
+        );
+    }),
+
+    rest.get('http://localhost:3030/toppings', (req, res, ctx) => {
+        return res(
+            ctx.json([
+                { name: 'Cherries', imgPath: '/images/cherries.png' },
+                { name: 'M&M', imgPath: '/images/m-and-ms.png' },
+                { name: 'Hot fudge', imgPath: '/images/hot-fudge.png' },
             ])
         );
     }),
