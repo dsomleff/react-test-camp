@@ -1,13 +1,17 @@
-import { render, screen } from '@testing-library/react';
+// import { render, screen } from '@testing-library/react';
+// import { OrderDetailsProvider } from '../../../contexts/OrderDetails';
+import { render, screen } from '../../../test-utils/wrapper-utils';
 import userEvent from '@testing-library/user-event';
 import Options from '../Options';
-import { OrderDetailsProvider } from '../../../contexts/OrderDetails';
 
 it.skip('should update subtotal when scoop changed', async () => {
     // Options receive props from context OrderDetailsProvider,
     // so we need to specify the wrapper for it.
     // It can be also Redux provider or Route.
-    render(<Options orderType={'scoops'} />, { wrapper: OrderDetailsProvider });
+    // you can do it like this:
+    // render(<Options orderType={'scoops'} />, { wrapper: OrderDetailsProvider });
+    //or you can create your own utils
+    render(<Options orderType={'scoops'} />);
 
     const scoopSubtotal = screen.getByText('Scoops total: $', { exact: false });
     expect(scoopSubtotal).toHaveTextContent('0.00');
