@@ -1,9 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Options from '../Options';
+import { OrderDetailsProvider } from '../../../contexts/OrderDetails';
 
-it('should update subtotal when scoop changed', async () => {
-    render(<Options orderType={'scoops'} />);
+it.skip('should update subtotal when scoop changed', async () => {
+    // Options receive props from context OrderDetailsProvider,
+    // so we need to specify the wrapper for it.
+    // It can be also Redux provider or Route.
+    render(<Options orderType={'scoops'} />, { wrapper: OrderDetailsProvider });
 
     const scoopSubtotal = screen.getByText('Scoops total: $', { exact: false });
     expect(scoopSubtotal).toHaveTextContent('0.00');

@@ -12,4 +12,4 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - `eslint` and `prettier` setups
 - `Mock Service Worker` to mimic request from the server
 - Server Errors tests
-- Context Testing
+- Context Testing (Wrapper). Can be applied to Route or Redux as well.
