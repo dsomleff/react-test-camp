@@ -13,3 +13,4 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - `Mock Service Worker` to mimic request from the server
 - Server Errors tests
 - Context Testing (Wrapper). Can be applied to Route or Redux as well.
+- Create a Custom Render with Default Wrapper.
