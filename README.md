@@ -6,7 +6,7 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 (https://www.udemy.com/course/react-testing-library/) by [Bonnie Schulkin](https://bonnie.dev).
 
 ## Folders Content
-> `test-library app`
+> test-library app
 - basic examples of tests syntax
 - functions and queries
 - `eslint` and `prettier` setups
@@ -14,3 +14,18 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - Server Errors tests
 - Context Testing (Wrapper). Can be applied to Route or Redux as well.
 - Create a Custom Render with Default Wrapper.
+
+### Q for a new Tests
+- What to render?
+  - what's the smallest component that encompasses the test?
+- Do we need to pass any props?
+- Do we need to wrap the component (Context Provider, Router, etc)?
+  - Does provider get used? Is it already wrapped within the component?
+- Where should test go?
+  - Which file? New file needed?
+- What to test?
+  - What's the behaviour that needs testing?
+- How to test?
+  - What query and events?
+- Do we need `await`?
+  - Is there is anything async going on? 
