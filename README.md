@@ -3,10 +3,10 @@
 ## Spec
 
 All ideas, tasks and some solutions was created during the watching [Testing React with Jest and Testing Library]
-(https://www.udemy.com/course/react-testing-library/) by [Bonnie Schulkin](https://bonnie.dev).
+(https://www.udemy.com/course/react-testing-library/) and [Advanced React Testing: Redux Saga and React Router](https://www.udemy.com/course/advanced-react-testing/?referralCode=317FB8E2C866D75D3B71) by [Bonnie Schulkin](https://bonnie.dev).
 
 ## Folders Content
-> test-library app
+> test-library-app
 - basic examples of tests syntax
 - functions and queries
 - `eslint` and `prettier` setups
@@ -14,6 +14,8 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - Server Errors tests
 - Context Testing (Wrapper). Can be applied to Route or Redux as well.
 - Create a Custom Render with Default Wrapper.
+
+> test-router-redux
 
 ### Q for a new Tests
 - What to render?
