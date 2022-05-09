@@ -15,8 +15,6 @@ All ideas, tasks and some solutions was created during the watching [Testing Rea
 - Context Testing (Wrapper). Can be applied to Route or Redux as well.
 - Create a Custom Render with Default Wrapper.
 
-> test-router-redux
-
 ### Q for a new Tests
 - What to render?
   - what's the smallest component that encompasses the test?
